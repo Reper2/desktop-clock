@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e pipefail
 
 echo
 echo "--Run from terminal manually to see details and errors--"
@@ -57,7 +58,7 @@ do
 done
 echo
 
-cd ../app || exit 1
+cd ../app
 
 npx tsc
 
