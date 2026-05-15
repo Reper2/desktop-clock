@@ -26,6 +26,7 @@ const bg: Background.Config = {
     katfl: await fetchDB("bg-katfl"),
     lm3: await fetchDB("bg-lm3"),
     mk8dx: await fetchDB("bg-mk8dx"),
+    mkw: await fetchDB("bg-mkw"),
     mps: await fetchDB("bg-mps"),
     miitopia: await fetchDB("bg-miitopia"),
     pm_ttyd: await fetchDB("bg-pm-ttyd"),
@@ -39,12 +40,13 @@ const bg: Background.Config = {
     smo: await fetchDB("bg-smo"),
     smp: await fetchDB("bg-smp"),
     ssbu: await fetchDB("bg-ssbu"),
+    tlltd: await fetchDB("bg-tlltd"),
     loz_botw: await fetchDB("bg-loz-botw"),
     loz_eow: await fetchDB("bg-loz-eow"),
     loz_ss: await fetchDB("bg-loz-ss"),
     loz_totk: await fetchDB("bg-loz-totk")
   },
-  game: ["acnh", "dkb", "hw_aoi", "katfl", "lm3", "mk8dx", "mps", "miitopia", "pm_ttyd", "pik4", "poke_la", "poke_sword", "sm3da", "sm3dw_bf", "smbw", "smg2", "smo", "smp", "ssbu", "loz_botw", "loz_eow", "loz_ss", "loz_totk"]
+  game: ["acnh", "dkb", "hw_aoi", "katfl", "lm3", "mk8dx", "mkw", "mps", "miitopia", "pm_ttyd", "pik4", "poke_la", "poke_sword", "sm3da", "sm3dw_bf", "smbw", "smg2", "smo", "smp", "ssbu", "tlltd", "loz_botw", "loz_eow", "loz_ss", "loz_totk"]
 };
 
 type Name = string | number;

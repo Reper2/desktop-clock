@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Opening WebApp and starting http server on port 2633..."
+echo "Opening WebApp and starting http server on port 25625..."
 
 cd ../
 

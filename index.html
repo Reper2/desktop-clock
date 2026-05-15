@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Desktop Clock</title>
   <link href="./assets/main.css" rel="stylesheet" type="text/css">
+  <link href="./assets/eggs.css" rel="stylesheet" type="text/css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGBMJBFWQF"></script>
   <script>
@@ -14,28 +15,42 @@
 
     gtag('config', 'G-EGBMJBFWQF');
   </script>
-  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
   <link rel="manifest" type="application/manifest+json" href="./site.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta id="meta-title" property="og:title" content="Desktop Clock">
   <meta id="meta-desc" property="og:description"
     content="A basic desktop clock web app with 3000+ different backgrounds. You don't get to choose though.">
-  <meta id="meta-image" name="og:image" itemprop="image" content="https://raw.githubusercontent.com/Reper2/switch-album/acnh/2021020916540700_c.jpg">
+  <meta id="meta-image" name="og:image" itemprop="image"
+    content="https://raw.githubusercontent.com/Reper2/switch-album/acnh/2021020916540700_c.jpg">
   <meta property="og:site_name" content="Desktop Clock | reper2.github.io">
   <meta property="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#14d8ee">
 </head>
 
 <body id="_bg">
+  <div class="egg" data-egg="dClock_aboveHeader">
+    <img class="egg-box" src="./images/hidden_block.png" alt="Egg - Hidden Block">
+    <img class="egg-cracked" src="./images/moon.png" alt="Egg - Moon">
+  </div>
   <header>Desktop Clock</header>
   <main>
+    <div class="egg" data-egg="dClock_aboveClock">
+      <img class="egg-box" src="./images/hidden_block.png" alt="Egg - Hidden Block">
+      <img class="egg-cracked" src="./images/moon.png" alt="Egg - Moon">
+    </div>
     <span id="clock"></span>
   </main>
+  <div class="egg" data-egg="dClock_aboveFooter">
+    <img class="egg-box" src="./images/hidden_block.png" alt="Egg - Hidden Block">
+    <img class="egg-cracked" src="./images/moon.png" alt="Egg - Moon">
+  </div>
   <footer id="footer" class="bottom"></footer>
 </body>
 <script type="application/javascript" src="./app/lib/jquery.min.js"></script>
+<script type="module" src="/app/dist/eggs.js"></script> <!-- Fetching from main website -->
 <script type="module" src="./app/dist/sw-installer.js"></script>
 <script type="module" src="./app/dist/app.js"></script>
 <script type="module" src="./app/dist/footer.js"></script>
