@@ -28,6 +28,18 @@
   <meta property="og:site_name" content="Desktop Clock | reper2.github.io">
   <meta property="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#14d8ee">
+  <script>
+    // Block rendering for a millisecond to pull the theme before the DOM draws
+    if (localStorage.getItem("site-theme") === "alt") {
+      const link = document.createElement("link");
+      link.id = "theme-link";
+      link.rel = "stylesheet";
+      link.href = "/assets/alt-theme.css";
+      document.head.appendChild(link);
+    } else if (!localStorage.getItem("site-theme")) {
+      localStorage.setItem("site-theme", "alt");
+    }
+  </script>
 </head>
 
 <body id="_bg">
