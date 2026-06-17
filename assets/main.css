@@ -25,10 +25,13 @@ header {
   /* Safari compatibility */
 }
 
+html {
+  background: #000;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #000;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
