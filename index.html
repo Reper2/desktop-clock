@@ -55,5 +55,20 @@
   <footer id="footer" class="bottom"></footer>
 </body>
 <script type="module" src="/app/dist/index.js"></script>
+<script defer>
+  const clock = document.getElementById("clock");
+
+  function updateClock() {
+    const now = new Date();
+    clock.textContent = now.toLocaleTimeString();
+
+    /* ms remaining until next second */
+    const delay = 1000 - now.getMilliseconds();
+
+    setTimeout(updateClock, delay);
+  }
+
+  updateClock();
+</script>
 
 </html>
